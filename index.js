@@ -83,6 +83,7 @@ console.log(greetHyewon);
 */
 
 /*
+//계산기 
 const calculator = {
   plus : function(a, b){
     return a + b;
@@ -110,13 +111,77 @@ console.log(plus, min, mul, div, pow);
 */
 
 //const title = document.getElementById("title");
-
+/*
 const title = document.querySelector("#title"); //id로 찾고 싶으면 #, class로 찾고 싶으면 . 쓰기
+
+
 console.log(title);
 
 title.innerHTML="Hi From JS" //JS에서 HTML의 id가 title인 것을 ""안에 있는 내용으로 교체함
 title.style.color = "red";
 document.title = "i own you now";
 
-
 console.dir(document);
+
+
+function handResize(event){
+    console.log(event); //event는 js로부터 온거임! 
+}
+
+window.addEventListener("resize", handResize); //브라우저 창 크기가 변할때마다 console 창에 log가 찍힘
+
+function handleClick(){
+    title.style.color = 'black';
+}
+
+window.addEventListener("click",handleClick);
+*/
+
+/*
+//if문
+if(10 === 5){ // =는 데이터 할당, ===는 데이터 체크
+    console.log('hi'); //()안의 condition이 true일 때 수행
+} else {
+    console.log('ho'); //()안의 condition이 false일 때 수행
+}
+
+//if-else 문
+if("10" === 10){
+    console.log('hi');
+} else if( "10" === "11"){
+    console.log('lalala');
+} else {
+    console.log('ho');
+}
+
+if(20 > 5 && "hyewon" === "hyewon"){ //&&는 두 조건이 모두 true여야 true, ||는 두 조건 중 하나만 true여도 true
+    console.log("yes");
+} else {
+    console.log("no");
+}
+
+*/
+
+/*
+true && true = true;
+false && truen = false;
+true && false = false;
+false && false = false;
+
+true || true = true
+false || true = true
+true || false = true
+false || false = false
+*/
+
+const age = prompt("How old are you");
+
+//console.log(age); //prompt창에 입력된 값을 console 창에 띄워줌
+
+if( age >= 18 && age <= 21){
+    console.log("you can drink but you should not");
+} else if( age > 21 ){
+    console.log("go ahed");
+} else {
+    console.log("too young");
+}
