@@ -1,9 +1,6 @@
 body{
     background-color: #3F51B5;
-}
-h1{
     color:  #FFC107;
-    transition: color 0.5s ease-in-out;
 }
 
 .clicked{
@@ -12,4 +9,13 @@ h1{
 
 .btn{
     cursor: pointer;
+}
+
+.form,
+.greetings{
+    display: none;
+}
+
+.showing{
+    display: block;
 }
