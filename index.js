@@ -169,11 +169,12 @@ true && false = false;
 false && false = false;
 
 true || true = true
-false || true = true
+false || true = true 
 true || false = true
 false || false = false
 */
 
+/*
 const age = prompt("How old are you");
 
 //console.log(age); //prompt창에 입력된 값을 console 창에 띄워줌
@@ -185,3 +186,68 @@ if( age >= 18 && age <= 21){
 } else {
     console.log("too young");
 }
+*/
+
+/*
+const title = document.querySelector("#title");
+const BASE_COLOR ="rgb(253, 175, 103)";
+const OTHER_COLOR ="#f345ff";
+
+function handleClick(){
+  const currentColor = title.style.color;
+  if(currentColor === BASE_COLOR){
+    title.style.color = OTHER_COLOR;
+  } else {
+    title.style.color = BASE_COLOR; 
+  }
+}
+
+function init(){
+  title.style.color = BASE_COLOR;
+  title.addEventListener("mouseenter",handleClick);
+}
+
+//event의 근원이 알고 싶으면 MDN을 찾아보기! 
+
+init();
+
+function handleOffline(){
+  console.log("lalalala");
+}
+
+function handleOnline(){
+  console.log("welcome back!");
+}
+
+window.addEventListener("offline",handleOffline);
+window.addEventListener("online",handleOnline);
+*/
+
+const title = document.querySelector("#title");
+
+const CLICKED_CLASS ="clicked";
+
+function handleClick(){
+  /*
+  //classList에 clicked를 추가함
+  const hasClass = title.classList.contains(CLICKED_CLASS);
+
+  //만약 hasClass 목록에 없으면 추가함
+  if(!hasClass){
+    title.classList.remove(CLICKED_CLASS);
+  } else {
+    title.classList.add(CLICKED_CLASS);
+  }
+  */
+
+  //이 한줄이 232~240까지의 코드를 수행해줌 
+  title.classList.toggle(CLICKED_CLASS);
+  
+  console.log(title.classList);
+}
+
+function init(){
+  title.addEventListener("click",handleClick);
+}
+
+init();

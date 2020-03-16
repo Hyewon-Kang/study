@@ -1,6 +1,15 @@
 body{
-    background-color: rgb(166, 248, 164);
+    background-color: #3F51B5;
 }
 h1{
-    color: white;
+    color:  #FFC107;
+    transition: color 0.5s ease-in-out;
+}
+
+.clicked{
+    color : #8BC34A;
+}
+
+.btn{
+    cursor: pointer;
 }
