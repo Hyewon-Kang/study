@@ -31,7 +31,7 @@ function askForName(){
 function paintGreeting(text){
     form.classList.remove(SHOWIMG_CN);
     greeting.classList.add(SHOWIMG_CN);
-    greeting.innerText = `Hello ${text}`;
+    greeting.innerText = `Hey ${text}, what do you do today?`;
 }
 
 //user name이 null값이면 이름을 물어보고 null값이 아니면 name setting 해줌

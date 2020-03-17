@@ -20,7 +20,7 @@ function deleteToDo(event){
         parseInt는 li.id를 int로 바꿔줌
         ↓모든 toDos가 li의 id와 같지 않을 경우
         */
-        return toDo.is !== parseInt(li.id);
+        return toDo.id !== parseInt(li.id);
     });
 
     //li가 삭제된 cleanToDos를 기존 toDos에 넣어줌 => 삭제된 데이터 업데이트 
@@ -46,6 +46,7 @@ function paintToDo(text){
     
     delBtn.innerHTML = "×";
     delBtn.addEventListener("click",deleteToDo);
+    delBtn.id = "delBtn"
 
     span.innerText = text;
     li.appendChild(span);

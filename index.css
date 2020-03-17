@@ -1,6 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:300&display=swap');
+
+
 body{
     background-color: #3F51B5;
     color: white;
+    font-family: 'Rubik';
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    line-height: 30px;
+}
+
+h1{
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-family: Roboto+Slab;
+    font-size: 25px;
+}
+
+input{
+    color: #ffffff;
+    background-color: transparent;
+    padding-top: 15px;
+    border: 0;
+    width: 300px;
+    border-bottom: 1px solid #000000;
+}
+
+input::placeholder{
+    color: #ffffff;
+    font-family: Roboto+Slab, Gothic+A1;
+    font-size: 20px;
+    text-align: center;
+}
+
+.js-clock{
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.js-weather{
+    display: flex;
+    float: right;
+    text-align: right;
+    font-weight: 300;
+    font-size: 15px;
+    font-family: Roboto, Gothic+A1;
+}
+
+.js-toDoList{
+    position: relative;
+    right: 15px;
 }
 
 .clicked{
@@ -47,3 +104,14 @@ body{
     z-index: -1;
     animation: fadeIn .5s linear;
 }
+
+
+
+#delBtn{
+    color : #ff0000;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1.5px solid red;
+    margin: 5px;
+}
+
