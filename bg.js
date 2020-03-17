@@ -7,7 +7,7 @@ function handleImgLoad(){
 }
 function paintImage(imgNumber){
     const image = new Image();
-    image.src =`C:/Users/khw_9/OneDrive/문서/JS/study/images/${imgNumber + 1}.jpg`;
+    image.src =`/images/${imgNumber + 1}.jpg`;
     image.classList.add('bgImage');
     image.addEventListener("loaded", handleImgLoad);
     body.prepend(image);
